@@ -6,7 +6,7 @@ app.get('/health', (req, res) => {
 });
 
 app.get('/message', (req, res) => {
-  res.send('Hello from DevOps 🚀');
+  res.send('Deployment successful at ${new Date(),toLocaleString()}🚀');
 });
 
 app.listen(3000, () => {

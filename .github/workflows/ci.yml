@@ -26,5 +26,7 @@ jobs:
         sleep 3
         curl http://localhost:3000/health
 
-    - name: Build Docker image
-      run: docker build -t devops-app:${{ github.sha }} .
+    - name: Deploy locally
+      run: |
+        chmod +x deploy.sh
+        ./deploy.sh
