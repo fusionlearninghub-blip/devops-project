@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 app.get('/health', (req, res) => {
-  res.send('Updated version 🚀');
+  res.send('I just completed a project on CI/CD using local server on Github 🚀');
 });
 
 app.get('/message', (req, res) => {
