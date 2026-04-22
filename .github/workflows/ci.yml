@@ -27,4 +27,4 @@ jobs:
         curl http://localhost:3000/health
 
     - name: Build Docker image
-      run: docker build -t devops-app .
+      run: docker build -t devops-app:${{ github.sha }} .
